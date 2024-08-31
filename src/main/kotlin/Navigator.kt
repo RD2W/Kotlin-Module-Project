@@ -19,7 +19,7 @@ class Navigator {
 
                 val input = readlnOrNull()?.trim() ?: continue
                 if (!input.matches(Regex("[0-${list.size + 1}]"))) {
-                    println("Пожалуйста, введите число соответствующее пункту меню.\n")
+                    println("Пожалуйста, введите число соответствующее пункту меню.")
                     continue
                 }
 

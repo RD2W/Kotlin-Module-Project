@@ -1,3 +1,5 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+fun main() {
+    println("\nДобро пожаловать в консольное приложение \"Замети\"!")
+    println("Выбор пункта меню осуществляется путем ввода числа сотвестветсвующему этому пункту.\n")
+    ConsoleApp().launch()
 }

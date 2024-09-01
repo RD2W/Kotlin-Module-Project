@@ -16,9 +16,7 @@ class ConsoleApp {
             Navigator.navigate("\nСписок заметок в архиве \"${selectedArchive.header}\":",
                 selectedArchive.notes,
                 { selectedNote ->
-                    println("\n$selectedNote\nНажмите \"Enter\" чтобы просмотреть текст заметки")
-                    readlnOrNull()
-                    println("Содержимое:\n[${selectedNote.content}]\n\nНажмите \"Enter\" чтобы вернуться к списку заметок")
+                    println("\n$selectedNote\nСодержимое:\n[${selectedNote.content}]\n\nНажмите \"Enter\" чтобы вернуться к списку заметок")
                     readlnOrNull()
                 },
                 {

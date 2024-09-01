@@ -17,7 +17,7 @@ class Navigator {
                 }
                 println("\n${list.size}. Создать\n${list.size + 1}. Выход\n\nВведите число для выбора пункта меню:")
 
-                val input = readlnOrNull()?.trim() ?: continue
+                val input = ConsoleApp().input()
                 if (!input.matches(Regex("[0-${list.size + 1}]"))) {
                     println("Пожалуйста, введите число соответствующее пункту меню.")
                     continue

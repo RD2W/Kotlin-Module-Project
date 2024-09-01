@@ -1,12 +1,12 @@
 class ConsoleApp {
     private val archives = mutableListOf<Archive>()
 
-    private fun input(): String {
+    internal fun input(): String {
         var userInput: String
         do {
             userInput = readlnOrNull() ?: ""
             val checkInput = userInput.isEmpty() || userInput.isBlank()
-            if (checkInput) println("Имя не может быть пустым!\nСделайте повторный ввод:")
+            if (checkInput) println("Ввод не может быть пустым!\nСделайте повторный ввод:")
         } while (checkInput)
         return userInput.trim()
     }

@@ -5,7 +5,7 @@ class ConsoleApp {
         var userInput: String
         do {
             userInput = readlnOrNull() ?: ""
-            val checkInput = userInput.isEmpty() || userInput.isBlank()
+            val checkInput = userInput.isBlank()
             if (checkInput) println("Ввод не может быть пустым!\nСделайте повторный ввод:")
         } while (checkInput)
         return userInput.trim()
